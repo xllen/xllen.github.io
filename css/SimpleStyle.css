@@ -2406,7 +2406,7 @@ body {
 .nav-user a.btn-search {
     display:none
 }
-.main-inner {
+.main-inner{
     padding-top:45px;
     padding-left:32px
 }
@@ -3447,4 +3447,126 @@ body.night-mode,.night-mode .btn,body.night-mode a,.night-mode .nav-user a,#sear
 }
 .ins-section .ins-search-item:hover .ins-slug,.ins-section .ins-search-item.active .ins-slug,.ins-section .ins-search-item:hover .ins-search-preview,.ins-section .ins-search-item.active .ins-search-preview {
     color:#fff!important
+}
+.about-me {
+    padding-top:58px;
+    padding-left:32px;
+    background: url(../images/bg.jpg);
+    position: relative;
+    height: 800px;
+}
+.about-me .hi {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 4px solid #000;
+    margin-left: -35px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 24px;
+}   
+.about-me .detail {
+    position: absolute;
+    left: 155px;
+    top: 155px;
+    text-align: center;
+    line-height: 5px;
+    font-size: 16px;
+}
+.icon1,.icon2,.icon3 {
+    padding-left: 20px;
+}
+.about-me .about {
+    position: absolute;
+    left: 120px;
+    top: 260px;
+    width: 500px;
+    height: 300px;
+    font-size: 16px
+}
+.about-me .about .about-title {
+    width: 200px;
+    height: 40px;
+    background-color: #000;
+    color: #ccc;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-left: 160px;
+    text-align: center;
+}
+.about-me .edu {
+    position: relative;
+    left: 124px;
+    top: 385px;
+}
+.about-me .edu .edu-title,
+.about-me .study .study-title {
+    width: 150px;
+    height: 40px;
+    background-color: #000;
+    color: #ccc;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin-left: 160px;
+    text-align: center;
+
+}
+.about-me .edu .edu-detail {
+   margin-top: 50px;
+}
+.about-me .edu p::before,
+.about-me .edu p::after {
+    content:'';
+    width: 15px;
+    height: 15px;
+    border:1px solid #ccc;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 95px;
+    background-color: #000;
+}
+.about-me .edu p::after {
+    left: 225px;
+}
+.about-me .edu .edu-time01 {
+    position: absolute;
+    left: 0px;
+    top: 65px;
+}
+.about-me .edu .edu-time02 {
+    position: absolute;
+    left: 225px;
+    top: 65px;
+}
+.about-me .edu .edu-adress02 {
+    position: absolute;
+    left: 225px;
+    top: 125px;
+}
+.about-me .study {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    left: 0px;
+    top: 430px;
+}
+ul {
+    list-style: none;
+}
+.about-me .study .study-title {
+    margin-left: 100px;
+}
+.about-me .study ul li {
+    float: left;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 10px;
+    margin-left: 20px;
 }

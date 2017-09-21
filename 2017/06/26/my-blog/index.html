@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-CN">
+<!--
+//                            _ooOoo_
+//                           o8888888o
+//                           88" . "88
+//                           (| -_- |)
+//                            O\ = /O
+//                        ____/`---'\____
+//                      .   ' \\| |// `.
+//                       / \\||| : |||// \
+//                     / _||||| -:- |||||- \
+//                       | | \\\ - /// | |
+//                     | \_| ''\---/'' | |
+//                      \ .-\__ `-` ___/-. /
+//                   ___`. .' /--.--\ `. . __
+//                ."" '< `.___\_<|>_/___.' >'"".
+//               | | : `- \`.;`\ _ /`;.`/ - ` : | |
+//                 \ \ `-. \_ __\ /__ _/ .-` / /
+//         ======`-.____`-.___\_____/___.-`____.-'======
+//                            `=---='
+//                 拦截插件累计拦截逗比攻击"1381438"次！
+//         .............................................
+//                  佛祖保佑             永无BUG
+//          佛曰:
+//                  写字楼里写字间，写字间里程序员；
+//                  程序人员写程序，又拿程序换酒钱。
+//                  酒醒只在网上坐，酒醉还来网下眠；
+//                  酒醉酒醒日复日，网上网下年复年。
+//                  但愿老死电脑间，不愿鞠躬老板前；
+//                  奔驰宝马贵者趣，公交自行程序员。
+//                  别人笑我忒疯癫，我笑自己命太贱；
+//                  不见满街漂亮妹，哪个归得程序员？
+-->
+<head>
+    <!--[if lte IE 9]>
+<meta http-equiv="refresh" content="0;url=http://yoursite.com/warn.html">
+<![endif]-->
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="mobile-agent" content="format=html5; url=http://yoursite.com">
+<meta name="author" content="谢磊">
+<link rel="stylesheet" href="/css/SimpleStyle.css">
+
+<link rel="shortcut icon" href="/images/me.png">
+
+
+<title>my blog - 谢磊</title>
+
+<meta name="keywords" content="undefined">
+
+<meta name="description " content="本篇讲一些本人用hexo和github搭建及部署个人博客时的步骤，还有过程中遇到的一些问题及解答，我用的主题是jsimple">
+</head>
+<body>
+<div id="nav">
+    <nav class="nav-menu">
+        <a class="site-name current" href="/" title="磊">磊</a>
+        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
+        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
+        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
+        <a href="/works" title="作品"><i class="fa fa-file-text-o"></i><span>作品</span></a>
+        <a href="/picture" title="相册"><i class="fa fa-camera-retro"></i><span>相册</span></a>
+        <a href="/about-me" title="关于我"><i class="fa fa-question-circle"></i><span>关于我</span></a>
+    </nav>
+</div>
+<div class="nav-user">
+    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
+    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
+    <a class="btn-weixin-mp" href="javascript:"><i class="fa fa-weixin"></i></a>
+</div>
+<div id="wrapper" class="clearfix">
+    <div id="body">
+        <div class="main" id="main">
+            <div id="cover">
+    <div class="cover-img"></div>
+    <div class="cover-info">
+        <img class="avatar" width="72" src="/images/me.png" alt="avatar" />
+        <h1>谢磊</h1>
+        <h3>交流技术，畅谈人文</h3>
+        <p>一个关注技术与人文的IT博客</p>
+        <div class="cover-sns">
+            <div class="btn btn-slack">
+                <a href="https://join.slack.com/readseek/signup" target="_blank" rel="nofollow"><i class="fa fa-slack"></i></a>
+            </div>
+            <div class="btn btn-weibo">
+                <a href="https://weibo.com" target="_blank" rel="nofollow"><i class="fa fa-weibo"></i></a>
+            </div>
+            <div class="btn btn-facebook">
+                <a href="https://facebook.com"  target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="btn btn-github">
+                <a href="https://github.com/xllen"  target="_blank" rel="nofollow"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="page-title">
+    <ul>
+        <li><a href="/">最新</a></li>
+        
+            
+                <li class="">
+                    <a href="/categories/big-front-end" data-name="前端">前端</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/server-side" data-name="后台">后台</a>
+                </li>
+            
+                <li class="">
+                    <a href="/categories/design" data-name="设计">设计</a>
+                </li>
+            
+                <li class="active">
+                    <a href="/categories/resource" data-name="资源">资源</a>
+                </li>
+            
+        
+        <li class="page-search">
+    <form id="search" class="search-form">
+        <label for="s" class="sr-only">请输入关键字</label>
+        <input class="search-field" type="text" name="s" class="text" placeholder="请输入关键字" />
+        <button type="submit" class="search-form-submit" title="搜索"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+</li>
+
+    </ul>
+</div>
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="https://www.baidu.com" target="_blank">
+                    <img width="48" src="/images/favicon.png" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="https://about.tangkunyin.com" target="_blank">谢磊</a>
+                    <span title="最后编辑于2017-06-26">2017-06-26</span>
+                </p>
+                <p>一个小码农</p>
+            </div>
+            <h2 class="post-title">my blog</h2>
+            <div class="post-meta">
+                本文总共1685个字 | 您是第<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>位看到它们的小伙伴
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <h2 id="用hexo和github搭建部署属于自己的blog"><a href="#用hexo和github搭建部署属于自己的blog" class="headerlink" title="用hexo和github搭建部署属于自己的blog"></a>用hexo和github搭建部署属于自己的blog</h2><hr>
+<p>首先需要安装NodeJS和git，配好本地环境，参考一些网上资料</p>
+<p>上一步骤完成之后，开始搭建自己的blog，参考<a href="https://hexo.io/" target="_blank" rel="external">hexo</a>官网</p>
+<h2 id="一、初步搭建"><a href="#一、初步搭建" class="headerlink" title="一、初步搭建"></a>一、初步搭建</h2><h3 id="1-在你创建的个人文件夹下，打开windows-PowerShell或Git-Bash-输入命令"><a href="#1-在你创建的个人文件夹下，打开windows-PowerShell或Git-Bash-输入命令" class="headerlink" title="1.在你创建的个人文件夹下，打开windows PowerShell或Git Bash 输入命令"></a>1.在你创建的个人文件夹下，打开windows PowerShell或Git Bash 输入命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
+<h3 id="2-创建hexo站点"><a href="#2-创建hexo站点" class="headerlink" title="2.创建hexo站点"></a>2.创建hexo站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init blog </div><div class="line">$ <span class="built_in">cd</span> blog</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
+<h3 id="3-完成这步你就可以看到自己的博客了"><a href="#3-完成这步你就可以看到自己的博客了" class="headerlink" title="3.完成这步你就可以看到自己的博客了"></a>3.完成这步你就可以看到自己的博客了</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo g </div><div class="line">$ hexo s</div></pre></td></tr></table></figure>
+<p>hexo g命令用来生成静态文件，hexo s是用来创建本地服务器默认地址是localhost：4000<br>打开你的浏览器，输入localhost：4000你就可以看到自己的blog啦！</p>
+<h4 id="部署到GitHub我们最后说-插一句，网上有很多hexo的中文文档，站点配置文件里有一个-config-yml文件，里面的一些基本配置，可自行去配。"><a href="#部署到GitHub我们最后说-插一句，网上有很多hexo的中文文档，站点配置文件里有一个-config-yml文件，里面的一些基本配置，可自行去配。" class="headerlink" title="部署到GitHub我们最后说,插一句，网上有很多hexo的中文文档，站点配置文件里有一个_config.yml文件，里面的一些基本配置，可自行去配。"></a>部署到GitHub我们最后说,插一句，网上有很多hexo的中文文档，站点配置文件里有一个_config.yml文件，里面的一些基本配置，可自行去配。</h4><hr>
+<h2 id="二、更改主题"><a href="#二、更改主题" class="headerlink" title="二、更改主题"></a>二、更改主题</h2><h3 id="1-下载主题，这里我用的是jsimple这个主题"><a href="#1-下载主题，这里我用的是jsimple这个主题" class="headerlink" title="1.下载主题，这里我用的是jsimple这个主题"></a>1.下载主题，这里我用的是<a href="https://shuoit.net/" target="_blank" rel="external">jsimple</a>这个主题</h3><p>两个方式可以把这个主题clone到themes文件里</p>
+<ul>
+<li>方式一，直接去这个主题的<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank" rel="external">github</a>地址去下载 ==&gt;推荐</li>
+<li>方式二，通过命令git clone github上的地址 ==&gt; 不推荐，克隆速度慢，可能clone文件缺失</li>
+</ul>
+<h3 id="2-更改主配置文件"><a href="#2-更改主配置文件" class="headerlink" title="2.更改主配置文件"></a>2.更改主配置文件</h3><ul>
+<li>找到上面说的_config.yml文件里的themes，更改它的值为你使用的主题名字，这里改为jsimple</li>
+</ul>
+<h3 id="3-每次更改-configyml文件里的内容，都需要重启一次本地服务器，这里我们输入下面命令"><a href="#3-每次更改-configyml文件里的内容，都需要重启一次本地服务器，这里我们输入下面命令" class="headerlink" title="3.每次更改_configyml文件里的内容，都需要重启一次本地服务器，这里我们输入下面命令"></a>3.每次更改_configyml文件里的内容，都需要重启一次本地服务器，这里我们输入下面命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean </div><div class="line">$ hexo g</div><div class="line">$ hexo s</div></pre></td></tr></table></figure>
+<h3 id="4-刷新网页，你就可以看到这个新主题啦，当然，你看到的是没有css样式的，"><a href="#4-刷新网页，你就可以看到这个新主题啦，当然，你看到的是没有css样式的，" class="headerlink" title="4.刷新网页，你就可以看到这个新主题啦，当然，你看到的是没有css样式的，"></a>4.刷新网页，你就可以看到这个新主题啦，当然，你看到的是没有css样式的，</h3><ul>
+<li>找到主题jsimple文件的里的配置文件_config.yml里的fullHttps，把true改成false，刷新。</li>
+<li>这样你就看得到有样式的blog啦</li>
+<li>_config.yml里面的一些名字，地址链接都改成自己的就ok</li>
+</ul>
+<h3 id="这里主题我们就换好了"><a href="#这里主题我们就换好了" class="headerlink" title="这里主题我们就换好了"></a>这里主题我们就换好了</h3><hr>
+<h2 id="三、新建文章——post"><a href="#三、新建文章——post" class="headerlink" title="三、新建文章——post"></a>三、新建文章——post</h2><h3 id="1-修改post-md模板"><a href="#1-修改post-md模板" class="headerlink" title="1.修改post.md模板"></a>1.修改post.md模板</h3><ul>
+<li>找到blog文件下的scaffolds模板文件，里面有三个md文件，draft是草稿模板，post是文章模板，page是页面模板</li>
+<li>打开post.md，里面的内容不用改动，只需要添加的配置如下<blockquote>
+<p>author: 谢磊<br>avatar: /images/favicon.png<br>authorLink: <a href="https://www.xielei.com" target="_blank" rel="external">https://www.xielei.com</a><br>authorAbout: <a href="https://about.xielei.com" target="_blank" rel="external">https://about.xielei.com</a><br>authorDesc: 一个小码农<br>categories: resource<br>tags:<br>- 个人<br>- 博客<br>keywords:<br>description: 技术<br>photos:</p>
+</blockquote>
+</li>
+<li>上面的值改成自己的即可</li>
+</ul>
+<h3 id="2-新建文章文件"><a href="#2-新建文章文件" class="headerlink" title="2.新建文章文件"></a>2.新建文章文件</h3><ul>
+<li><p>在命令窗口中输入下面指令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo n <span class="string">"new post"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>你会在你的blog中发现这篇文章，生成的源文件在source文件下的_post文件下，里就可以编写自己的笔记了</p>
+</li>
+</ul>
+<hr>
+<h2 id="四、自定义页面——pages"><a href="#四、自定义页面——pages" class="headerlink" title="四、自定义页面——pages"></a>四、自定义页面——pages</h2><h3 id="1-修改page-md模板"><a href="#1-修改page-md模板" class="headerlink" title="1.修改page.md模板"></a>1.修改page.md模板</h3><ul>
+<li>和上面步骤几乎差不多，page.md模板里的内容，没有tags和categories这两项，多了一项用来处理评论等相关<blockquote>
+<p>comments:</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="2-新建页面文件"><a href="#2-新建页面文件" class="headerlink" title="2.新建页面文件"></a>2.新建页面文件</h3><ul>
+<li>在命令窗口中输入下面指令<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo n page <span class="string">"about"</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>-接着会生成一个about文件夹，里面有一个index.md打开在基本数据上面加入一行</p>
+<blockquote>
+<p>layout: about<br>注意空格，加在- - -上面</p>
+</blockquote>
+<h3 id="3-在jsimple下面的layout文件下创建一个about-ejs文件"><a href="#3-在jsimple下面的layout文件下创建一个about-ejs文件" class="headerlink" title="3.在jsimple下面的layout文件下创建一个about.ejs文件"></a>3.在jsimple下面的layout文件下创建一个about.ejs文件</h3><ul>
+<li>里面编写你想要的页面内容及样式，这样和上面的about对应起来了</li>
+</ul>
+<h3 id="4-在该主题文件下的layout下的-partial文件下的leftMenu-ejs里加入about的a链接"><a href="#4-在该主题文件下的layout下的-partial文件下的leftMenu-ejs里加入about的a链接" class="headerlink" title="4.在该主题文件下的layout下的_partial文件下的leftMenu.ejs里加入about的a链接"></a>4.在该主题文件下的layout下的_partial文件下的leftMenu.ejs里加入about的a链接</h3><hr>
+<h2 id="五、部署到github"><a href="#五、部署到github" class="headerlink" title="五、部署到github"></a>五、部署到github</h2><h3 id="1-创建github账号，"><a href="#1-创建github账号，" class="headerlink" title="1.创建github账号，"></a>1.创建github账号，</h3>
+        </div>
+        <div class="post-tool">
+            <a class="btn-weixin-mp" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-mobile" aria-hidden="true"></i> 打包
+            </a>
+        </div>
+        
+        <div class="post-tags">标签：
+            
+            <a href="/tags/个人/">个人</a>
+            
+            <a href="/tags/博客/">博客</a>
+            
+        </div>
+        
+    </article>
+    
+</div>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        </div><!-- end #main-->
+    </div><!-- end #body -->
+    <footer class="footer">
+    <div class="footer-inner">
+        <p>
+            <a href="/about"  title="关于本站">关于本站</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/works" title="作品" >作品</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/picture" title="相册">相册</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <!-- 自定义链接 -->
+            <a href="/links" title="友情链接">友情链接</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
+            <a href="/app" title="App下载">App下载</a>
+        </p>
+        <p>
+            本站点采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>，已建立<a href="/timeline" id="siteBuildingTime"></a>天<br/>
+            ©2017 基于<a href="http://hexo.io" target="_blank">Hexo</a>搭建
+            ，主题&nbsp<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank">JSimple</a>
+            ，Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>
+        </p>
+        
+    </div>
+</footer>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="/js/InsightSearch.js"></script>
+<script src="/js/SimpleCore.js"></script>
+
+</div>
+<div class="fixed-btn">
+    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
+</div>
+<script>
+    $(function () {
+        SimpleCore.init({
+            buildingTime: '06/06/2017',
+            current: $('.post-tags').length > 0 ? 'post' : 'archive',
+            customImg: '/images/weixin-mp.png'
+        });
+    });
+</script>
+</body>
+</html>
